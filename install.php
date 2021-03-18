@@ -133,7 +133,8 @@ elseif($page == 'step')
 			Website::getDBHandle()->setDatabasePassword(Website::getServerConfig()->getValue(SERVERCONFIG_SQL_PASS));
 		else
 			throw new RuntimeException('#E-7 -There is no key <b>' . SERVERCONFIG_SQL_PASS . '</b> in server config file.');
-		$SQL = Website::getDBHandle();
+		//$SQL = Website::getDBHandle();
+		$SQL = Website::getDBHandle()->setPrintQueries(true);
 	}
 
 	if($step == 'start')
