@@ -355,7 +355,7 @@ elseif($page == 'step')
 			$account->setFlag('unknown');
 			$account->setCreateIP(Visitor::getIP());
 			$account->setCreateDate(time());
-			$account->save(true);
+			$account->save();
 		}
 		$newPlayer = new Player('Account Manager', Player::LOADTYPE_NAME);
 		if(!$newPlayer->isLoaded())
@@ -444,13 +444,13 @@ elseif($page == 'step')
 			else
 			{
 				//create / set pass to admin account
-				$account = new Account(1, Account::LOADTYPE_NAME);
+				$account = new Account(1, Account::LOADTYPE_ID);
 				if($account->isLoaded())
 				{
 					$account->setPassword($newpass);
 					$account->setPageAccess(3);
 					$account->setFlag('pl');
-					$account->save(true);
+					$account->save();
 				}
 				else
 				{
