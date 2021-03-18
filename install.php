@@ -348,7 +348,7 @@ elseif($page == 'step')
 		if(!$account->isLoaded())
 		{
 		    $account = new Account();
-			$account->setName(1);
+			$account->setId(1);
 			$account->setPassword(1);
 			$account->setMail(rand(0,999999) . '@gmail.com');
 			$account->setPageAccess(3);
