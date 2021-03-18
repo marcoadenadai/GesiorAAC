@@ -87,7 +87,7 @@ function check_name($name)
 function check_account_name($name)
 {
 	$name = (string) $name;
-	$temp = strspn("$name", "QWERTYUIOPASDFGHJKLZXCVBNM0123456789");
+	$temp = strspn("$name", "0123456789");
 	if ($temp != strlen($name))
 		return false;
 	if(strlen($name) < 1)

@@ -280,7 +280,7 @@ if($action == "saveaccount")
 	if(empty($reg_name))
 		$reg_form_errors[] = "Please enter account name.";
 	elseif(!check_account_name($reg_name))
-		$reg_form_errors[] = "Invalid account name format. Use only A-Z and numbers 0-9.";
+		$reg_form_errors[] = "Invalid account name format. Use numbers 0-9.";
 	if(empty($reg_email))
 		$reg_form_errors[] = "Please enter your email address.";
 	else
