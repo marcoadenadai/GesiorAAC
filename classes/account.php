@@ -5,7 +5,6 @@ if(!defined('INITIALIZED'))
 class Account extends ObjectData
 {
 	const LOADTYPE_ID = 'id';
-	const LOADTYPE_NAME = 'name';
 	const LOADTYPE_MAIL = 'email';
 	public static $table = 'accounts';
 	public $data = array('id' => null, 'name' => null, 'password' => null, 'premdays' => 0, 'lastday' => 0, 'email' => '', 'key' => '', 'create_ip' => 0, 'creation' => 0, 'premium_points' => 0, 'page_access' => 0, 'location' => '', 'rlname' => '', 'email_new' => '', 'email_new_time' => 0, 'email_code' => '', 'next_email' => 0, 'last_post' => 0, 'flag' => 'pl');
