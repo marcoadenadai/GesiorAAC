@@ -54,7 +54,7 @@ class Account extends ObjectData
 			$keys = array();
 			$values = array();
 			foreach(self::$fields as $key)
-				if($key != 'id')
+				if($key != 'name')
 				{
 					$keys[] = $this->getDatabaseHandler()->fieldName($key);
 					$values[] = $this->getDatabaseHandler()->quote($this->data[$key]);
