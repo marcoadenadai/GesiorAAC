@@ -48,14 +48,14 @@ class Account extends ObjectData
 		$this->load($mail, 'email');
 	}
 
-	public function save($forceInsert)
+	public function save($forceInsert=false)
 	{
 		if(!isset($this->data['id']) || $forceInsert)
 		{
 			$keys = array();
 			$values = array();
 			foreach(self::$fields as $key)
-				//if($key != 'id')
+				if($key != 'id')
 				{
 					$keys[] = $this->getDatabaseHandler()->fieldName($key);
 					$values[] = $this->getDatabaseHandler()->quote($this->data[$key]);

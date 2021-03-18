@@ -348,7 +348,7 @@ elseif($page == 'step')
 		if(!$account->isLoaded())
 		{
 		    $account = new Account();
-			$account->setId(1);
+			$account->setID(1);
 			$account->setPassword(1);
 			$account->setMail(rand(0,999999) . '@gmail.com');
 			$account->setPageAccess(3);
@@ -450,7 +450,7 @@ elseif($page == 'step')
 					$account->setPassword($newpass);
 					$account->setPageAccess(3);
 					$account->setFlag('pl');
-					$account->save();
+					$account->save(true);
 				}
 				else
 				{
