@@ -355,7 +355,7 @@ elseif($page == 'step')
 			$account->setFlag('unknown');
 			$account->setCreateIP(Visitor::getIP());
 			$account->setCreateDate(time());
-			$account->save();
+			$account->save(true);
 		}
 		$newPlayer = new Player('Account Manager', Player::LOADTYPE_NAME);
 		if(!$newPlayer->isLoaded())
