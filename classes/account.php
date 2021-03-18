@@ -48,7 +48,7 @@ class Account extends ObjectData
 		$this->load($mail, 'email');
 	}
 
-	public function save($forceInsert = false)
+	public function save($forceInsert)
 	{
 		if(!isset($this->data['id']) || $forceInsert)
 		{
