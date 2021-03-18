@@ -9,7 +9,7 @@ class Account extends ObjectData
 	const LOADTYPE_MAIL = 'email';
 	public static $table = 'accounts';
 	public $data = array('name' => null, 'password' => null, 'premdays' => 0, 'lastday' => 0, 'email' => '', 'key' => '', 'create_ip' => 0, 'creation' => 0, 'premium_points' => 0, 'page_access' => 0, 'location' => '', 'rlname' => '', 'email_new' => '', 'email_new_time' => 0, 'email_code' => '', 'next_email' => 0, 'last_post' => 0, 'flag' => 'pl');
-	public static $fields = array('id', 'name', 'password', 'premdays', 'lastday', 'email', 'key', 'create_ip', 'creation', 'premium_points', 'page_access', 'location', 'rlname', 'email_new', 'email_new_time', 'email_code', 'next_email', 'last_post', 'flag');
+	public static $fields = array('id', 'password', 'premdays', 'lastday', 'key', 'create_ip', 'premium_points', 'page_access', 'location', 'rlname', 'email_new', 'email_new_time', 'email_code', 'next_email', 'last_post', 'flag');
 	public $players;
 	public $playerRanks;
 	public $guildAccess;
