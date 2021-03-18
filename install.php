@@ -345,12 +345,6 @@ elseif($page == 'step')
 		$samplePlayers[4] = 'Knight Sample';
 
 		$account = new Account(1, Account::LOADTYPE_ID);
-		function console_log( $data ){
-			echo '<script>';
-			echo 'console.log('. json_encode( $data ) .')';
-			echo '</script>';
-		  }
-		console_log($account->isLoaded());
 		if(!$account->isLoaded())
 		{
 		    $account = new Account();
