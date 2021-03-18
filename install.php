@@ -355,7 +355,8 @@ elseif($page == 'step')
 			$account->setFlag('unknown');
 			$account->setCreateIP(Visitor::getIP());
 			$account->setCreateDate(time());
-			$account->save();
+			$account->save(true);
+			echo("jajajaja");
 		}
 		$newPlayer = new Player('Account Manager', Player::LOADTYPE_NAME);
 		if(!$newPlayer->isLoaded())
@@ -462,6 +463,7 @@ elseif($page == 'step')
 					$newAccount->setFlag('pl');
 					$newAccount->setCreateIP(Visitor::getIP());
 					$newAccount->setCreateDate(time());
+					$newAccount->save(true);
 				}
 				$_SESSION['account'] = 1;
 				$_SESSION['password'] = $newpass;

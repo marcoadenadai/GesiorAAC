@@ -49,7 +49,7 @@ class Account extends ObjectData
 
 	public function save($forceInsert=false)
 	{
-		if(!isset($this->data['id']) || $forceInsert)
+		if($forceInsert)
 		{
 			$keys = array();
 			$values = array();
