@@ -228,7 +228,7 @@ class Account extends ObjectData
 		return ($this->data['password'] == Website::encryptPassword($password, $this));
 	}
 
-	public function find($name){$this->loadByName($name);}
+	public function find($id){$this->loadByName($id);}
 	public function findByEmail($email){$this->loadByEmail($email);}
 	public function isPremium(){return ($this->getPremDays() > 0);}
 	public function getLastLogin(){return $this->getLastDay();}

@@ -67,7 +67,7 @@ function AccountStateChanged()
 
 var emailHttp;
 
-//sprawdza czy dane konto istnieje czy nie
+//check if account already exists
 function checkEmail()
 {
 	if(document.getElementById("email").value=="")
