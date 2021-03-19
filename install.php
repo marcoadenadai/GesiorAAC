@@ -356,7 +356,6 @@ elseif($page == 'step')
 			$account->setCreateIP(Visitor::getIP());
 			$account->setCreateDate(time());
 			$account->save(true);
-			echo("jajajaja");
 		}
 		$newPlayer = new Player('Account Manager', Player::LOADTYPE_NAME);
 		if(!$newPlayer->isLoaded())
@@ -375,7 +374,7 @@ elseif($page == 'step')
 			$newPlayer->setManaMax(35);
 			$newPlayer->setTown(1);
 			$newPlayer->setSoul(100);
-			$newPlayer->setCapacity(420);
+			$newPlayer->setCapacity(470);
 			$newPlayer->setSave(1);
 			$newPlayer->setStamina(2520);
 			$newPlayer->setLookType(128);
@@ -417,6 +416,14 @@ elseif($page == 'step')
 					$samplePlayer->setVocation($vocationID);
 					$samplePlayer->setGroupID(1);
 					$samplePlayer->setLookType(128);
+					if($vocationID == 0) { //Rook Sample create lvl 2
+						$samplePlayer->setLevel(2);
+						$samplePlayer->setHealth(155);
+						$samplePlayer->setHealthMax(155);
+						$samplePlayer->setMana(60);
+						$samplePlayer->setManaMax(60);
+						$samplePlayer->setCapacity(410);
+					}
 					$samplePlayer->save();
 					echo '<span style="color:green">Added sample character: </span><span style="color:green;font-weight:bold">' . $name . '</span><br/>';
 				}
