@@ -420,8 +420,8 @@ elseif($page == 'step')
 						$samplePlayer->setLevel(2);
 						$samplePlayer->setHealth(155);
 						$samplePlayer->setHealthMax(155);
-						$samplePlayer->setMana(60);
-						$samplePlayer->setManaMax(60);
+						$samplePlayer->setMana(5);
+						$samplePlayer->setManaMax(5);
 						$samplePlayer->setCapacity(410);
 					}
 					$samplePlayer->save();
