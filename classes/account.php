@@ -177,8 +177,8 @@ class Account extends ObjectData
 
 	public function setID($value){$this->data['id'] = $value;}
 	public function getID(){return $this->data['id'];}
-	public function setName($value){$this->data['name'] = $value;}
-	public function getName(){return $this->data['name'];}
+	public function setName($value){$this->data['id'] = $value;} //customized mocking name for id
+	public function getName(){return $this->data['id'];}		 //customized mocking name for id
 	public function setPassword($value)
 	{
 		$this->data['password'] = Website::encryptPassword($value, $this);

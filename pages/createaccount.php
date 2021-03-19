@@ -352,7 +352,7 @@ if($action == "saveaccount")
 		}
 		$reg_account = new Account();
 		// saves account information in database
-		$reg_account->setName($reg_name);
+		$reg_account->setId($reg_name);
 		$reg_account->setPassword($reg_password);
 		$reg_account->setEMail($reg_email);
 		$reg_account->setCreateDate(time());
