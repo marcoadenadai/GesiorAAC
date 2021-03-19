@@ -367,7 +367,7 @@ if($action == "saveaccount")
 			$reg_account->set("premdays", $config['site']['newaccount_premdays']);
 			$reg_account->set("lastday", time());
 		}
-		$reg_account->save();
+		$reg_account->save(true);
 		//show information about registration
 		if($config['site']['send_emails'] && $config['site']['create_account_verify_mail'])
 		{
