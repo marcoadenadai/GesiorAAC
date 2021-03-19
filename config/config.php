@@ -1,7 +1,7 @@
 <?PHP
 # Account Maker Config
 $config['site']['serverPath'] = "/home/ots/";
-$config['site']['server_name'] = 'Forgotten';
+$config['site']['server_name'] = 'Nostradamus';
 $towns_list = array(2 => 'Thais', 1 => 'Venore', 4 => 'Carlin');
 
 $config['site']['outfit_images_url'] = 'http://outfit-images.ots.me/outfit.php';
@@ -24,8 +24,8 @@ $config['site']['send_register_email'] = false;
 $config['site']['select_flag'] = true;
 
 # Create Character Options
-$config['site']['newchar_vocations'] = array(1 => 'Sorcerer Sample', 2 => 'Druid Sample', 3 => 'Paladin Sample', 4 => 'Knight Sample');
-$config['site']['newchar_towns'] = array(2);
+$config['site']['newchar_vocations'] = array(0 => 'Rook Sample');//array(1 => 'Sorcerer Sample', 2 => 'Druid Sample', 3 => 'Paladin Sample', 4 => 'Knight Sample');
+$config['site']['newchar_towns'] = array(1);
 $config['site']['max_players_per_account'] = 7;
 
 # Emails Config
