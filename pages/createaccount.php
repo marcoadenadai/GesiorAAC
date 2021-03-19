@@ -265,6 +265,8 @@ function EmailStateChanged()
 					</TR>
 					</TABLE>';
 }
+
+
 //CREATE ACCOUNT PAGE (save account in database)
 if($action == "saveaccount")
 {
